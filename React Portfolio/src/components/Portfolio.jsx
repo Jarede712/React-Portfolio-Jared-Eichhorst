@@ -1,3 +1,9 @@
+import Project from './Project';
+import pantrymaster from '../assets/pantrymaster.png';
+import chowtube from '../assets/chowtube.png';
+import jatepwa from '../assets/jatepwa.png';
+import passwordgenerator from '../assets/passwordgenerator.png';
+
 const Portfolio = () => {
   const projects = [
     {
@@ -5,7 +11,8 @@ const Portfolio = () => {
       description:
         'PantryMaster is a web application designed to help users stay organized by keeping track of the items in their pantry and creating shopping lists sorted into categories. Users can create an account to save their data. They will then be able to personalize their lists by creating new categories and adding new items to the database.',
       githubLink: 'https://github.com/Jarede712/Shopping-List-Helper',
-      deployedLink: '#',
+      deployedLink: 'Not Currently Deployed',
+      image: pantrymaster,
     },
     {
       title: 'ChowTube',
@@ -13,6 +20,7 @@ const Portfolio = () => {
         'This project is a meal search website where users can input their nutritional data and dietary restrictions to find meal options. Additionally, users can watch YouTube videos for the selected meals or recipes.',
       githubLink: 'https://github.com/catxcoding/chowtube',
       deployedLink: 'https://catxcoding.github.io/chowtube/',
+      image: chowtube,
     },
     {
       title: 'PWA Text Editor',
@@ -20,6 +28,7 @@ const Portfolio = () => {
         'This is a text editor PWA that lets users edit text files. It was built with simplicity in mind and can be downloaded to a users machine.',
       githubLink: 'https://github.com/Jarede712/PWA-Text-Editor',
       deployedLink: 'https://pwa-text-editor-23hc.onrender.com/',
+      image: jatepwa,
     },
     {
       title: 'Password Generator',
@@ -27,6 +36,7 @@ const Portfolio = () => {
         'A simple password generator made from HTML, CSS, and JavaScript. It allows you to set simple parameters and will generate a random passoword for you based on the parameters you chose.',
       githubLink: 'https://github.com/Jarede712/Password-Generator-Challenge',
       deployedLink: 'https://jarede712.github.io/Password-Generator-Challenge/',
+      image: passwordgenerator,
     },
   ];
 

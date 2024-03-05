@@ -1,6 +1,6 @@
 const Footer = () => {
   return (
-    <div>
+    <div className="footer-links">
       <a href="https://github.com/Jarede712">GitHub</a>
       <a href="https://www.linkedin.com/in/jared-eichhorst-b5a8382b3/">
         LinkedIn

@@ -1,10 +1,16 @@
+import profilePicture from '../assets/profilepicture.png';
+
 const AboutMe = () => {
   return (
     <section>
-      <h2>About Me</h2>
+      <h2 className="about-me-title">About Me</h2>
       <div>
-        <img src="../assets/profilepicture.jpg" alt="Developer Avatar" />
-        <p>
+        <img
+          src={profilePicture}
+          alt="Developer Avatar"
+          className="profile-picture"
+        />
+        <p className="about-me-text">
           My name is Jared Eichhorst, I was born and rasied in San Diego and
           have recently found an interest in web development and computer
           science. After I graduated college, I struggled to figure out what was

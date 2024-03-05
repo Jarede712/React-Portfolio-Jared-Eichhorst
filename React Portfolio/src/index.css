@@ -5,7 +5,7 @@
 
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+  background-color: #0f1626;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -16,17 +16,18 @@
 
 a {
   font-weight: 500;
-  color: #646cff;
+  color: #ff533d;
   text-decoration: inherit;
 }
 a:hover {
-  color: #535bf2;
+  color: #f5f5f5;
 }
 
 body {
   margin: 0;
   display: flex;
-  place-items: center;
+  flex-direction: column;
+  align-items: stretch;
   min-width: 320px;
   min-height: 100vh;
 }
@@ -48,7 +49,7 @@ button {
   transition: border-color 0.25s;
 }
 button:hover {
-  border-color: #646cff;
+  border-color: #ff533d;
 }
 button:focus,
 button:focus-visible {
@@ -66,4 +67,78 @@ button:focus-visible {
   button {
     background-color: #f9f9f9;
   }
+}
+
+.profile-picture {
+  max-width: 25%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+.about-me-text {
+  text-align: center;
+  margin: 60px;
+}
+
+.about-me-title {
+  text-align: center;
+  font-size: 40px;
+}
+
+.footer-links {
+  background-color: black;
+  display: flex;
+  justify-content: space-around;
+  padding: 1em 0;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+
+.header-style {
+  background-color: #ab987a;
+  color: black;
+  padding: 20px;
+}
+
+.project-links {
+  display: flex;
+  justify-content: left;
+  gap: 60px;
+  padding: 10px 0;
+  margin-bottom: 60px;
+}
+
+.contact-container {
+  margin-bottom: 100px;
+}
+
+.contact-container form div {
+  margin-bottom: 1em;
+}
+
+.contact-container form input {
+  width: 30%;
+  padding: 0.5em;
+  font-size: 1em;
+  margin: 10px;
+}
+
+.contact-container form textarea {
+  width: 50%;
+  padding: 1em;
+  font-size: 1.2em;
+  height: 200px;
+}
+
+.contact-container form label {
+  font-size: 1.2em;
+}
+
+.project-image {
+  width: 50%;
+  max-width: 500px;
+  height: auto;
 }

@@ -1,9 +1,10 @@
 const Resume = () => {
   return (
-    <section>
+    <section className="resume-container">
       <h2>Resume</h2>
       <p>
-        Download my resume <a href="<link to resume when I make one>">here</a>.
+        Download my resume <a href="<link to resume when I make one>">here</a>{' '}
+        (not yet created - will add in future).
       </p>
       <div>
         <h3>Proficiencies</h3>

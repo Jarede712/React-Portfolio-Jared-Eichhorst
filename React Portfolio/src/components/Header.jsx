@@ -4,8 +4,8 @@ const Header = ({ currentPage, setCurrentPage }) => {
   const pages = ['About Me', 'Portfolio', 'Contact', 'Resume'];
 
   return (
-    <header>
-      <h1>My Portfolio</h1>
+    <header className="header-style">
+      <h1>Jared Eichhorst - Web Developer</h1>
       <Navigation
         pages={pages}
         currentPage={currentPage}
