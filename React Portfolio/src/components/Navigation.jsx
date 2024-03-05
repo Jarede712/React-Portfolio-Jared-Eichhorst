@@ -1,6 +1,6 @@
 const Navigation = ({ pages, currentPage, setCurrentPage }) => {
   return (
-    <nav>
+    <nav className="nav-link-item">
       {pages.map((page) => (
         <button
           key={page}
