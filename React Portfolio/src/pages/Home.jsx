@@ -1,12 +1,12 @@
 import { useState } from 'react';
-import Header from './components/Header';
-import AboutMe from './components/AboutMe';
-import Portfolio from './components/Portfolio';
-import Contact from './components/Contact';
-import Resume from './components/Resume';
-import Footer from './components/Footer';
+import Header from '../components/Header';
+import AboutMe from '../components/AboutMe';
+import Portfolio from '../components/Portfolio';
+import Contact from '../components/Contact';
+import Resume from '../components/Resume';
+import Footer from '../components/Footer';
 
-function App() {
+function Home() {
   const [currentPage, setCurrentPage] = useState('About Me');
 
   return (
@@ -21,4 +21,4 @@ function App() {
   );
 }
 
-export default App;
+export default Home;
