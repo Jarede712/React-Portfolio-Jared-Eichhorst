@@ -26,7 +26,7 @@ This project is intended to be used not only as my main portfolio, but also as a
 
 ## Image
 
-[!screenshot](./images/portfolio-screenshot.png)
+![screenshot](./images/portfolio-screenshot.png)
 
 ## License
 
