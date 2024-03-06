@@ -42,7 +42,7 @@ const Portfolio = () => {
 
   return (
     <section>
-      <h2>Portfolio</h2>
+      <h2 className="portfolio-title">Portfolio</h2>
       <div className="projects">
         {projects.map((project) => (
           <Project key={project.title} {...project} />

@@ -5,7 +5,7 @@ const Header = ({ currentPage, setCurrentPage }) => {
 
   return (
     <header className="header-style">
-      <h1>Jared Eichhorst - Web Developer</h1>
+      <h1>Jared Eichhorst</h1>
       <Navigation
         pages={pages}
         currentPage={currentPage}
