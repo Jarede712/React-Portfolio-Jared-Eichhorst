@@ -1,6 +1,5 @@
 import { useState } from 'react';
 import axios from 'axios';
-import { useNavigate } from 'react-router-dom';
 
 const Contact = () => {
   const [formState, setFormState] = useState({
@@ -9,7 +8,11 @@ const Contact = () => {
     message: '',
   });
 
-  const navigate = useNavigate();
+  const [touched, setTouched] = useState({
+    name: false,
+    email: false,
+    message: false,
+  });
 
   const handleSubmit = async (event) => {
     event.preventDefault();
@@ -17,11 +20,12 @@ const Contact = () => {
       'https://jaredeichhorst-portfolio.netlify.app/.netlify/functions/sendmail',
       formState
     );
-    navigate('/');
+    window.location.href = '/';
   };
 
   const handleChange = (event) => {
     setFormState({ ...formState, [event.target.id]: event.target.value });
+    setTouched({ ...touched, [event.target.id]: true });
   };
 
   const isFormValid = formState.name && formState.email && formState.message;
@@ -39,7 +43,7 @@ const Contact = () => {
             onChange={handleChange}
             value={formState.name}
           />
-          {!formState.name && <div>Required</div>}
+          {!formState.name && touched.name && <div>Required</div>}
         </div>
         <div>
           <label htmlFor="email">Email:</label>
@@ -50,7 +54,7 @@ const Contact = () => {
             onChange={handleChange}
             value={formState.email}
           />
-          {!formState.email && <div>Required</div>}
+          {!formState.email && touched.email && <div>Required</div>}
         </div>
         <div>
           <label htmlFor="message">Message:</label>
@@ -60,7 +64,7 @@ const Contact = () => {
             onChange={handleChange}
             value={formState.message}
           />
-          {!formState.message && <div>Required</div>}
+          {!formState.message && touched.message && <div>Required</div>}
         </div>
         <button
           type="submit"
