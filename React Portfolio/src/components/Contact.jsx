@@ -23,18 +23,35 @@ const Contact = () => {
   return (
     <section className="contact-container">
       <h2 className="contact-title">Contact</h2>
-      <form>
+      <form onSubmit={handleSubmit}>
         <div>
           <label htmlFor="name">Name:</label>
-          <input type="text" id="name" required />
+          <input
+            type="text"
+            id="name"
+            required
+            onChange={handleChange}
+            value={formState.name}
+          />
         </div>
         <div>
           <label htmlFor="email">Email:</label>
-          <input type="email" id="email" required />
+          <input
+            type="email"
+            id="email"
+            required
+            onChange={handleChange}
+            value={formState.email}
+          />
         </div>
         <div>
           <label htmlFor="message">Message:</label>
-          <textarea id="message" required />
+          <textarea
+            id="message"
+            required
+            onChange={handleChange}
+            value={formState.message}
+          />
         </div>
         <button type="submit" className="contact-submit-button">
           Submit
