@@ -11,7 +11,7 @@ const Contact = () => {
   const handleSubmit = async (event) => {
     event.preventDefault();
     const response = await axios.post(
-      'https://jaredeichhorst-portfolio.netlify.app/.netlify/functions/sendmail',
+      'https://jaredeichhorst-portfolio.netlify.app/../netlify/functions/sendmail',
       formState
     );
   };
