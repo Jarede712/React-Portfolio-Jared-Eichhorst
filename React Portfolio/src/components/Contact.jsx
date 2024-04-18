@@ -9,12 +9,6 @@ const Contact = () => {
     message: '',
   });
 
-  const [touched, setTouched] = useState({
-    name: false,
-    email: false,
-    message: false,
-  });
-
   const navigate = useNavigate();
 
   const handleSubmit = async (event) => {
@@ -28,7 +22,6 @@ const Contact = () => {
 
   const handleChange = (event) => {
     setFormState({ ...formState, [event.target.id]: event.target.value });
-    setTouched({ ...touched, [event.target.id]: true });
   };
 
   const isFormValid = formState.name && formState.email && formState.message;
@@ -46,7 +39,7 @@ const Contact = () => {
             onChange={handleChange}
             value={formState.name}
           />
-          {touched.name && !formState.name && <div>Required</div>}
+          {!formState.name && <div>Required</div>}
         </div>
         <div>
           <label htmlFor="email">Email:</label>
@@ -57,7 +50,7 @@ const Contact = () => {
             onChange={handleChange}
             value={formState.email}
           />
-          {touched.email && !formState.email && <div>Required</div>}
+          {!formState.email && <div>Required</div>}
         </div>
         <div>
           <label htmlFor="message">Message:</label>
@@ -67,7 +60,7 @@ const Contact = () => {
             onChange={handleChange}
             value={formState.message}
           />
-          {touched.message && !formState.message && <div>Required</div>}
+          {!formState.message && <div>Required</div>}
         </div>
         <button
           type="submit"
