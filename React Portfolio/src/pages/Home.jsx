@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import Header from '../components/Header';
 import AboutMe from '../components/AboutMe';
 import Portfolio from '../components/Portfolio';
@@ -8,6 +8,10 @@ import Footer from '../components/Footer';
 
 function Home() {
   const [currentPage, setCurrentPage] = useState('About Me');
+
+  useEffect(() => {
+    document.title = 'My Portfolio';
+  }, []);
 
   return (
     <div className="App">

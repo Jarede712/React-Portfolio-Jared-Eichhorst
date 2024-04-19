@@ -16,9 +16,11 @@ const Contact = () => {
 
   const handleSubmit = async (event) => {
     event.preventDefault();
+    const { name, email, message } = formState;
+    const formattedMessage = `Name: ${name} - Email: ${email} - Message ${message}`;
     const response = await axios.post(
       'https://jaredeichhorst-portfolio.netlify.app/.netlify/functions/sendmail',
-      formState
+      { message: formattedMessage }
     );
     window.location.href = '/';
   };
