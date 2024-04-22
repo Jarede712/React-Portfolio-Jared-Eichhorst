@@ -109,18 +109,63 @@ button:focus-visible {
   padding: 0 1em;
 }
 
+@keyframes headerSlideFromLeft {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+.header-style h1 {
+  animation: headerSlideFromLeft 2s forwards;
+}
+
+@keyframes icondrop {
+  from {
+    transform: translateY(-200%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+.github-icon,
+.linkedin-icon,
+.email-icon,
+.wellfound-logo {
+  transform: translateY(-250%);
+}
+
+.github-icon {
+  animation: icondrop 2s forwards 0s;
+}
+
+.linkedin-icon {
+  animation: icondrop 2s forwards 0.5s;
+}
+
+.email-icon {
+  animation: icondrop 2s forwards 1s;
+}
+
+.wellfound-logo {
+  animation: icondrop 2s forwards 1.5s;
+}
+
 .header-style .logo-container {
   display: flex;
 }
 
 .header-style .logo-container a {
-  margin-right: 30px; /* Adjust this value to reduce the space between the logos */
+  margin-right: 30px;
   font-size: 2em;
 }
 
 .header-style .wellfound-logo {
-  width: 32px; /* Adjust this value to make the Wellfound logo smaller */
-  border-radius: 50%; /* This will make the Wellfound logo a circle */
+  width: 32px;
+  border-radius: 50%;
 }
 
 .project-links {
