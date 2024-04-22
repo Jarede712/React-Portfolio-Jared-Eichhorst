@@ -101,10 +101,26 @@ button:focus-visible {
 }
 
 .header-style {
+  display: flex;
+  justify-content: space-between; /* This will push the items to the edges of the container */
+  align-items: center;
   background-color: #ab987a;
   color: #213547;
-  padding: 10px;
-  text-align: left;
+  padding: 0 1em;
+}
+
+.header-style .logo-container {
+  display: flex;
+}
+
+.header-style .logo-container a {
+  margin-right: 30px; /* Adjust this value to reduce the space between the logos */
+  font-size: 2em;
+}
+
+.header-style .wellfound-logo {
+  width: 32px; /* Adjust this value to make the Wellfound logo smaller */
+  border-radius: 50%; /* This will make the Wellfound logo a circle */
 }
 
 .project-links {
