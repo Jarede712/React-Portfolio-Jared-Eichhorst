@@ -80,6 +80,10 @@ a.not-deployed-link {
   color: grey;
 }
 
+a.not-deployed-link:hover {
+  text-shadow: none;
+}
+
 .profile-picture {
   max-width: 25%;
   height: auto;
