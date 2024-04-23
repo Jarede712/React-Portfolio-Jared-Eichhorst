@@ -90,6 +90,8 @@ a.not-deployed-link {
   height: auto;
   display: block;
   margin: 0 auto;
+  margin-top: 50px;
+  box-shadow: 5px 5px rgba(135, 17, 203, 0.467);
 }
 
 .about-me-text {
