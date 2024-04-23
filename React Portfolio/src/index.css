@@ -16,7 +16,7 @@
 
 a {
   font-weight: 500;
-  background: linear-gradient(to bottom, rgb(237, 140, 3), rgb(173, 35, 7));
+  background: linear-gradient(to bottom, rgb(26, 193, 182), rgb(7, 68, 173));
   background-clip: border-box;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -24,7 +24,7 @@ a {
 }
 
 a:hover {
-  text-shadow: 0px 0px 5px #fff700;
+  text-shadow: 0px 0px 10px #ffffff, 0px 0px 20px #ababab, 0px 0px 30px #595959;
 }
 
 body {
@@ -86,7 +86,7 @@ a.not-deployed-link {
   display: block;
   margin: 0 auto;
   margin-top: 50px;
-  box-shadow: 5px 5px rgb(73, 22, 227);
+  box-shadow: 5px 5px rgb(26, 193, 182);
 }
 
 .about-me-text {
@@ -116,7 +116,7 @@ a.not-deployed-link {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: linear-gradient(to right, rgb(73, 22, 227), rgb(82, 6, 175));
+  background: linear-gradient(to right, rgb(0, 0, 0), rgb(61, 61, 61));
   color: #ffffff;
   padding: 0 1em;
 }
@@ -152,22 +152,22 @@ a.not-deployed-link {
 
 .github-icon {
   animation: icondrop 0.5s forwards 0s;
-  color: rgb(237, 140, 3);
+  color: rgb(26, 193, 182);
 }
 
 .linkedin-icon {
   animation: icondrop 0.5s forwards 0.3s;
-  color: rgb(237, 140, 3);
+  color: rgb(26, 193, 182);
 }
 
 .email-icon {
   animation: icondrop 0.5s forwards 0.6s;
-  color: rgb(237, 140, 3);
+  color: rgb(26, 193, 182);
 }
 
 .stack-icon {
   animation: icondrop 0.5s forwards 0.9s;
-  color: rgb(237, 140, 3);
+  color: rgb(26, 193, 182);
 }
 
 .github-icon:hover,
@@ -256,7 +256,7 @@ a.not-deployed-link {
 .nav-link-item button {
   padding: 10px 20px;
   font-size: 1.75em;
-  background-color: #ff533d;
+  background-color: rgb(26, 193, 182);
 }
 
 .resume-container {
@@ -264,7 +264,7 @@ a.not-deployed-link {
   margin-left: 50px;
 }
 .contact-submit-button {
-  background-color: #ff533d;
+  background-color: rgb(26, 193, 182);
 }
 
 .contact-title {
