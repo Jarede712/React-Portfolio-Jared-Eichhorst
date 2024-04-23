@@ -30,11 +30,18 @@ const Contact = () => {
     setTouched({ ...touched, [event.target.id]: true });
   };
 
+  const handleBack = () => {
+    window.location.href = '/';
+  };
+
   const isFormValid = formState.name && formState.email && formState.message;
 
   return (
     <section className="contact-container">
       <h2 className="contact-title">Contact</h2>
+      <button className="back-button" onClick={handleBack}>
+        Back
+      </button>
       <form onSubmit={handleSubmit}>
         <div>
           <label htmlFor="name">Name:</label>
