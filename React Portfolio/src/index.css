@@ -16,12 +16,7 @@
 
 a {
   font-weight: 500;
-  background: linear-gradient(
-    to bottom,
-    rgb(255, 234, 0),
-    rgb(237, 140, 3),
-    rgb(173, 7, 120)
-  );
+  background: linear-gradient(to bottom, rgb(237, 140, 3), rgb(173, 35, 7));
   background-clip: border-box;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -29,7 +24,7 @@ a {
 }
 
 a:hover {
-  text-shadow: 0px 0px 5px #bd1896;
+  text-shadow: 0px 0px 5px #fff700;
 }
 
 body {
@@ -91,7 +86,7 @@ a.not-deployed-link {
   display: block;
   margin: 0 auto;
   margin-top: 50px;
-  box-shadow: 5px 5px rgba(135, 17, 203, 0.467);
+  box-shadow: 5px 5px rgb(73, 22, 227);
 }
 
 .about-me-text {
@@ -121,7 +116,7 @@ a.not-deployed-link {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: linear-gradient(to bottom, rgb(255, 162, 0), #721675);
+  background: linear-gradient(to right, rgb(73, 22, 227), rgb(82, 6, 175));
   color: #ffffff;
   padding: 0 1em;
 }
@@ -157,22 +152,22 @@ a.not-deployed-link {
 
 .github-icon {
   animation: icondrop 0.5s forwards 0s;
-  color: rgba(173, 7, 120, 0.811);
+  color: rgb(237, 140, 3);
 }
 
 .linkedin-icon {
   animation: icondrop 0.5s forwards 0.3s;
-  color: rgba(173, 7, 120, 0.811);
+  color: rgb(237, 140, 3);
 }
 
 .email-icon {
   animation: icondrop 0.5s forwards 0.6s;
-  color: rgba(173, 7, 120, 0.811);
+  color: rgb(237, 140, 3);
 }
 
 .stack-icon {
   animation: icondrop 0.5s forwards 0.9s;
-  color: rgba(173, 7, 120, 0.811);
+  color: rgb(237, 140, 3);
 }
 
 .github-icon:hover,
@@ -237,7 +232,6 @@ a.not-deployed-link {
   color: white;
   background-clip: border-box;
   -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
 }
 
 .project {
@@ -284,7 +278,7 @@ a.not-deployed-link {
 
 .about-me-section {
   flex: 3;
-  border-right: 1px solid #721675;
+  border-right: 1px solid #000000;
   padding-right: 5px;
 }
 
