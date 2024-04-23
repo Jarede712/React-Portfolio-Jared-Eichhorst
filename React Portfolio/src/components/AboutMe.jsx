@@ -13,17 +13,15 @@ const AboutMe = () => {
         <p className="about-me-text">
           My name is Jared Eichhorst, I was born and rasied in San Diego and
           have recently found an interest in web development and computer
-          science. After I graduated college, I struggled to figure out what was
-          next, I was initially working doing CAD drawings for a traffic control
-          company called Hudson Safe-T-Lite, but I knew that was not going to be
-          a job I wanted to stick with forever. Then I learned about web
-          development, I did some research on how to start a career in this
-          field and found a bootcamp that lined up well with my schedule. Now I
-          am looking to pursue it as a carrer. Web development for me is a
-          stepping towards other tech related jobs. Right now my focus is on
-          that fully, but I have been looking at other areas such as
-          cybersecurity and game development. I have always been interested in
-          creating and this has been a great outlet for me to express that.
+          science. Coding has always been something I've been interested in but
+          never knew where to start. After much research and trying to figure
+          things out on my own, I finally decided to sign up for a coding
+          bootcamp through UCSD extended studies. Through the course of the
+          bootcamp I have developed a real passion for this field. Although I am
+          very much an amatuer, I'm always looking to grow as a developer and
+          learn from others in the industry. This portfolio was a project for me
+          to learn the basics of React and to showcase a bit of what I learned
+          over the course of the bootcamp.
         </p>
       </div>
     </section>

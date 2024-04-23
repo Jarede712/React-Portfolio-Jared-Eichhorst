@@ -5,7 +5,7 @@
 
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
-  background-color: #0f1626;
+  background: linear-gradient(to bottom, rgb(2, 2, 47), rgb(54, 6, 165));
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -16,11 +16,20 @@
 
 a {
   font-weight: 500;
-  color: #ff533d;
+  background: linear-gradient(
+    to bottom,
+    rgb(255, 234, 0),
+    rgb(237, 140, 3),
+    rgb(173, 7, 120)
+  );
+  background-clip: border-box;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   text-decoration: inherit;
 }
+
 a:hover {
-  color: #f5f5f5;
+  text-shadow: 0px 0px 5px #bd1896;
 }
 
 body {
@@ -70,6 +79,10 @@ button:focus-visible {
   }
 }
 
+a.not-deployed-link {
+  color: grey;
+}
+
 .profile-picture {
   max-width: 25%;
   height: auto;
@@ -102,10 +115,10 @@ button:focus-visible {
 
 .header-style {
   display: flex;
-  justify-content: space-between; /* This will push the items to the edges of the container */
+  justify-content: space-between;
   align-items: center;
-  background-color: #ab987a;
-  color: #213547;
+  background: linear-gradient(to bottom, rgb(255, 162, 0), #721675);
+  color: #ffffff;
   padding: 0 1em;
 }
 
@@ -119,7 +132,7 @@ button:focus-visible {
 }
 
 .header-style h1 {
-  animation: headerSlideFromLeft 2s forwards;
+  animation: headerSlideFromLeft 1.8s forwards;
 }
 
 @keyframes icondrop {
@@ -134,24 +147,35 @@ button:focus-visible {
 .github-icon,
 .linkedin-icon,
 .email-icon,
-.wellfound-logo {
+.stack-icon {
   transform: translateY(-250%);
 }
 
 .github-icon {
-  animation: icondrop 2s forwards 0s;
+  animation: icondrop 0.5s forwards 0s;
+  color: rgba(173, 7, 120, 0.811);
 }
 
 .linkedin-icon {
-  animation: icondrop 2s forwards 0.5s;
+  animation: icondrop 0.5s forwards 0.3s;
+  color: rgba(173, 7, 120, 0.811);
 }
 
 .email-icon {
-  animation: icondrop 2s forwards 1s;
+  animation: icondrop 0.5s forwards 0.6s;
+  color: rgba(173, 7, 120, 0.811);
 }
 
-.wellfound-logo {
-  animation: icondrop 2s forwards 1.5s;
+.stack-icon {
+  animation: icondrop 0.5s forwards 0.9s;
+  color: rgba(173, 7, 120, 0.811);
+}
+
+.github-icon:hover,
+.stack-icon:hover,
+.email-icon:hover,
+.linkedin-icon:hover {
+  filter: drop-shadow(2px 2px 2px black);
 }
 
 .header-style .logo-container {
@@ -163,7 +187,7 @@ button:focus-visible {
   font-size: 2em;
 }
 
-.header-style .wellfound-logo {
+.header-style .stack-icon {
   width: 32px;
   border-radius: 50%;
 }
@@ -206,6 +230,10 @@ button:focus-visible {
 .portfolio-title {
   text-align: center;
   font-size: 50px;
+  color: white;
+  background-clip: border-box;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .project {
@@ -252,7 +280,7 @@ button:focus-visible {
 
 .about-me-section {
   flex: 3;
-  border-right: 1px solid #000;
+  border-right: 1px solid #ffffff;
   padding-right: 5px;
 }
 
@@ -261,4 +289,5 @@ button:focus-visible {
   height: 100vh;
   overflow-y: auto;
   padding-left: 20px;
+  background: linear-gradient(to bottom, rgb(2, 2, 47), rgb(54, 6, 165));
 }

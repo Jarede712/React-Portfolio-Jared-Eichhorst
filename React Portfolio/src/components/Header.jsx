@@ -1,6 +1,10 @@
-import { FaGithub, FaLinkedin, FaEnvelope } from 'react-icons/fa';
+import {
+  FaGithub,
+  FaLinkedin,
+  FaEnvelope,
+  FaStackOverflow,
+} from 'react-icons/fa';
 import { IconContext } from 'react-icons';
-import wellfoundLogo from '../assets/wellfoundlogo.png';
 
 const Socials = ({ setCurrentPage }) => {
   return (
@@ -33,16 +37,14 @@ const Socials = ({ setCurrentPage }) => {
         </IconContext.Provider>
       </a>
       <a
-        href="link-to-wellfound"
+        href="https://stackoverflow.com/users/24477003/jared-712"
         target="_blank"
         rel="noopener noreferrer"
-        title="Wellfound"
+        title="StackOverflow"
       >
-        <img
-          src={wellfoundLogo}
-          alt="Wellfound"
-          className="social-icons wellfound-logo"
-        />
+        <IconContext.Provider value={{ className: 'social-icons stack-icon' }}>
+          <FaStackOverflow />
+        </IconContext.Provider>
       </a>
     </div>
   );
