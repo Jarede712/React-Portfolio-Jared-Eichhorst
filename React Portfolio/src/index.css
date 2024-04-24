@@ -78,6 +78,7 @@ a.not-deployed-link {
   background: none;
   -webkit-text-fill-color: initial;
   color: grey;
+  pointer-events: none;
 }
 
 a.not-deployed-link:hover {
@@ -306,6 +307,12 @@ a.not-deployed-link:hover {
   color: #ffffff;
 }
 
+.contact-submit-button-disabled {
+  margin-top: 20px;
+  background-color: transparent;
+  color: transparent;
+}
+
 .header-container {
   display: flex;
   justify-content: space-between;
@@ -315,7 +322,8 @@ a.not-deployed-link:hover {
 
 .contact-title {
   align-self: center;
-  font-size: 30px;
+  font-size: 50px;
+  transform: translateY(50px);
 }
 
 .main-page {

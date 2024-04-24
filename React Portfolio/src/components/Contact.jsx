@@ -42,7 +42,7 @@ const Contact = () => {
         <div className="header-container"></div>
         <div className="form-container">
           <form onSubmit={handleSubmit}>
-            <h2 className="contact-title">Contact</h2>
+            <h2 className="contact-title">Contact Me</h2>
             <button className="back-button" onClick={handleBack}>
               Back
             </button>
@@ -86,7 +86,11 @@ const Contact = () => {
             </div>
             <button
               type="submit"
-              className="contact-submit-button"
+              className={
+                isFormValid
+                  ? 'contact-submit-button'
+                  : 'contact-submit-button-disabled'
+              }
               disabled={!isFormValid}
             >
               Submit
