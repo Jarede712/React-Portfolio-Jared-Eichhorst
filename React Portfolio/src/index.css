@@ -367,6 +367,7 @@ a.not-deployed-link:hover {
   .footer-links {
     flex-direction: column;
     padding: 1em;
+    font-size: 15px;
   }
 
   .project-links {
@@ -456,6 +457,7 @@ a.not-deployed-link:hover {
   .footer-links {
     flex-direction: column;
     padding: 0.5em;
+    font-size: 10px;
   }
 
   .project-links {
@@ -491,7 +493,7 @@ a.not-deployed-link:hover {
   }
 
   .about-me-text {
-    font-size: 16px;
+    font-size: 10px;
   }
 
   .project {
