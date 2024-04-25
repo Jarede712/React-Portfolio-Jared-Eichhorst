@@ -421,7 +421,7 @@ a.not-deployed-link:hover {
   }
 
   .contact-title {
-    font-size: 40px;
+    font-size: 50px;
   }
 
   .about-me-text {
@@ -430,6 +430,13 @@ a.not-deployed-link:hover {
 
   .header-style h1 {
     font-size: 40px;
+  }
+
+  .back-button,
+  .contact-submit-button,
+  .contact-message-box {
+    font-size: 15px;
+    padding: 10px 20px;
   }
 }
 
@@ -511,10 +518,17 @@ a.not-deployed-link:hover {
   }
 
   .contact-title {
-    font-size: 30px;
+    font-size: 40px;
   }
 
   .about-me-text {
     font-size: 10px;
+  }
+
+  .back-button,
+  .contact-submit-button,
+  .contact-message-box {
+    font-size: 20px;
+    padding: 10px 20px;
   }
 }
