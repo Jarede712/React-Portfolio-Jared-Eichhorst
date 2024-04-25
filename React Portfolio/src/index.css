@@ -348,7 +348,7 @@ a.not-deployed-link:hover {
 
 @media only screen and (max-width: 768px) {
   body {
-    font-size: 80%;
+    font-size: 40%;
   }
 
   .header-style {
@@ -406,11 +406,15 @@ a.not-deployed-link:hover {
   .contact-title {
     font-size: 40px;
   }
+
+  .about-me-text {
+    font-size: 10px;
+  }
 }
 
 @media only screen and (max-width: 480px) {
   body {
-    font-size: 50%;
+    font-size: 25%;
   }
   .header-style {
     flex-direction: column;
@@ -466,5 +470,9 @@ a.not-deployed-link:hover {
 
   .contact-title {
     font-size: 30px;
+  }
+
+  .about-me-text {
+    font-size: 10px;
   }
 }
