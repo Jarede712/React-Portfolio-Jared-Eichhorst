@@ -345,3 +345,126 @@ a.not-deployed-link:hover {
   padding-left: 20px;
   background: linear-gradient(to bottom, rgb(2, 2, 47), rgb(54, 6, 165));
 }
+
+@media only screen and (max-width: 768px) {
+  body {
+    font-size: 80%;
+  }
+
+  .header-style {
+    flex-direction: column;
+  }
+
+  .footer-links {
+    flex-direction: column;
+    padding: 1em;
+  }
+
+  .project-links {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .form-container {
+    width: 100%;
+  }
+
+  .contact-container form input,
+  .contact-container form textarea {
+    font-size: 0.8em;
+  }
+
+  .header-style .logo-container a {
+    font-size: 1.5em;
+  }
+
+  .portfolio-title {
+    font-size: 40px;
+  }
+
+  .about-me-title {
+    font-size: 30px;
+  }
+
+  .about-me-text {
+    font-size: 18px;
+  }
+
+  .project {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  .project-image {
+    width: 70%;
+  }
+
+  .nav-link-item button {
+    font-size: 1.5em;
+  }
+
+  .contact-title {
+    font-size: 40px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  body {
+    font-size: 50%;
+  }
+  .header-style {
+    flex-direction: column;
+  }
+
+  .footer-links {
+    flex-direction: column;
+    padding: 0.5em;
+  }
+
+  .project-links {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .form-container {
+    width: 100%;
+  }
+
+  .contact-container form input,
+  .contact-container form textarea {
+    font-size: 0.7em;
+  }
+
+  .header-style .logo-container a {
+    font-size: 1.2em;
+  }
+
+  .portfolio-title {
+    font-size: 30px;
+  }
+
+  .about-me-title {
+    font-size: 25px;
+  }
+
+  .about-me-text {
+    font-size: 16px;
+  }
+
+  .project {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  .project-image {
+    width: 90%;
+  }
+
+  .nav-link-item button {
+    font-size: 1.2em;
+  }
+
+  .contact-title {
+    font-size: 30px;
+  }
+}
