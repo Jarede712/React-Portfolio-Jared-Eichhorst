@@ -347,6 +347,15 @@ a.not-deployed-link:hover {
 }
 
 @media only screen and (max-width: 768px) {
+  .github-icon,
+  .linkedin-icon,
+  .email-icon,
+  .stack-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
   body {
     font-size: 40%;
   }
@@ -371,11 +380,17 @@ a.not-deployed-link:hover {
 
   .contact-container form input,
   .contact-container form textarea {
-    font-size: 0.8em;
+    font-size: 1em;
+    padding: 0.7em;
   }
 
   .header-style .logo-container a {
-    font-size: 1.5em;
+    font-size: 4em;
+  }
+
+  .header-style .logo-container {
+    justify-content: center;
+    align-items: center;
   }
 
   .portfolio-title {
@@ -400,7 +415,8 @@ a.not-deployed-link:hover {
   }
 
   .nav-link-item button {
-    font-size: 1.5em;
+    font-size: 2em;
+    padding: 15px 30px;
   }
 
   .contact-title {
@@ -410,9 +426,26 @@ a.not-deployed-link:hover {
   .about-me-text {
     font-size: 10px;
   }
+
+  .header-style h1 {
+    font-size: 40px;
+  }
 }
 
 @media only screen and (max-width: 480px) {
+  .header-style h1 {
+    font-size: 50px;
+  }
+
+  .github-icon,
+  .linkedin-icon,
+  .email-icon,
+  .stack-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
   body {
     font-size: 25%;
   }
@@ -436,11 +469,17 @@ a.not-deployed-link:hover {
 
   .contact-container form input,
   .contact-container form textarea {
-    font-size: 0.7em;
+    font-size: 0.9em;
+    padding: 0.6em;
   }
 
   .header-style .logo-container a {
-    font-size: 1.2em;
+    font-size: 4.5em;
+  }
+
+  .header-style .logo-container {
+    justify-content: center;
+    align-items: center;
   }
 
   .portfolio-title {
@@ -465,7 +504,8 @@ a.not-deployed-link:hover {
   }
 
   .nav-link-item button {
-    font-size: 1.2em;
+    font-size: 1.5em;
+    padding: 12px 24px;
   }
 
   .contact-title {
