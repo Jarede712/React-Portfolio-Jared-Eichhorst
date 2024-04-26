@@ -17,10 +17,11 @@ const AboutMe = () => {
           After much research and trying to figure things out on my own, I
           finally decided to sign up for a coding bootcamp through UCSD extended
           studies. Through the course of the bootcamp I have developed a real
-          passion for this field. Although I am very much an amatuer, I'm always
-          looking to grow as a developer and learn from others in the industry.
-          This portfolio was a project for me to learn the basics of React and
-          to showcase a bit of what I learned over the course of the bootcamp.
+          passion for this field. I enjoy solving probelms as a developer and
+          I'm always looking for ways to grow and learn from others in this
+          field. This portfolio was a project for me to learn the basics of
+          React and to showcase some of the projects I worked on over the course
+          of the bootcamp.
         </p>
       </div>
     </section>
