@@ -11,8 +11,8 @@ const Portfolio = () => {
       title: 'Disc Golf E-Commerce Store',
       description:
         'An E-Commerce store built using the MERN stack. Allows users to create an account, add items to a cart, and checkout (not integrated). Users can filter items by categories as well',
-      githubLink: 'https://github.com/Jarede712/Password-Generator-Challenge',
-      deployedLink: 'https://github.com/Shibiiii/Eco-Friendly_Disc-Golf',
+      githubLink: 'https://github.com/Shibiiii/Eco-Friendly_Disc-Golf',
+      deployedLink: 'https://eco-friendly-disc-golf.onrender.com',
       image: discgolfproject,
       isDeployed: true,
     },
